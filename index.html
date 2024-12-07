@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./tahsine.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="./responsive.css"> -->
+    <link rel="stylesheet" href="./style.css">
+    <title>التحصين & الساعة الروحانية</title>
+</head>
+<body>
+
+
+<div id = "container">
+    
+
+    <header>
+        <div>
+    
+        </div>
+    </header>
+
+    <aside>
+        <form>
+    
+            <textarea dir="rtl" placeholder ="ضع نص الرسالة هنا" class ="textarea1" id="text" onkeypress="countWord() ,countWords()"  style="height: 100px; width: 285px;"></textarea>
+          
+        </form> 
+<div class = "h_class">
+
+    <h1 class="eljafr"> قاعدة  حساب  الجفر  </h1>
+</div>
+       
+
+        <table class ="best">
+
+
+            <tr >
+                
+                <td  id="best6" class ="best6"></td>
+                <th  class ="best5">عدد حروف النص</th>
+           
+    
+    
+            </tr>
+
+            <tr >
+               
+                <td id ="best4"></td>
+                <th class ="best2">عدد كلمات هذا النص </th>
+           
+    
+    
+            </tr>
+            <tr >
+                
+                <td  id="best3" class ="best3"></td>
+                <th  class ="best1">القيمة العددية لهذا النص</th>
+           
+    
+    
+            </tr>
+            
+        </table>
+      
+
+       
+      
+        <div >
+
+            <button id="a" onclick="run_rohani()">برجك الحقيقي وساعتك الروحانية ويومك</button>
+            
+            <textarea   dir="rtl" class="borj"  id="numbero"  placeholder="ضع القيمة العددية لهذا النص هنا ..."></textarea>
+            
+        </div>
+       
+ 
+
+    </aside>
+
+
+    <main>
+        <div>
+
+          <h2><a  target="_blank"  class="linkas"  href="./فيديو تعريفي.mp4">الفيديو التعريفي</a> </h2>
+            <h1>Your Geolocation API</h1>
+            <p>Time Zone : <span id="timezone"></span></p>
+        
+            <p>Latitude: <span id="latitude"></span></p>
+            <p>Longitude: <span id="longitude"></span></p>
+            <p>Date (Hijri): <span id="hijriDate"></span></p>
+            <p>gregorianDate: <span id="gregorianDate"></span></p>
+    
+         
+            <hr>
+        
+            <h1>Prayer Times</h1>
+            <p>Sunrise Time: <span id="sunrise"></span></p>
+            <p>Sunset Time: <span id="sunset"></span></p>
+            <p>Fajr Prayer Time: <span id="fajr"></span></p>
+            <p>Dhuhr Prayer Time: <span id="dhuhr"></span></p>
+            <p>Asr Prayer Time: <span id="asr"></span></p>
+            <p>Maghrib Prayer Time: <span id="maghrib"></span></p>
+            <p>Isha Prayer Time: <span id="isha"></span></p>
+        
+            <p>Imsak Time: <span id="Imsak"></span></p>
+            <p>Midnight Time: <span id="Midnight"></span></p>
+        
+           </div>
+
+        <div class="jadoual">
+
+           
+
+
+            <table align="center" border="1" cellpadding="1" cellspacing="1" dir="ltr">
+                <caption>
+                    <h3><a  target="_blank"  class="linkas"  href="https://www.youtube.com/watch?v=5qboyXdGBQg&pp=ygU22K3Zg9mK2YUg2LHZiNit2KfZhtmKINmF2LnYsdmB2Kkg2KjYsdis2YMg2YjYt9in2YTYudmD">الفيديو الذي إعتمدت عليه لصناعة هذا البرنامج</a></h3> 
+                <p style="text-align:center"><span style="color:#000000"><span style="background-color:#ecf0f1">أوقات الساعةالروحانية من : 1 ----12</span></span></p>
+                </caption>
+                <thead>
+                    <tr>
+                        <th scope="col"><span style="color:#000000"><span style="background-color:#f39c12" id="sa3a13">إلى</span></span></th>
+						<th scope="col"><span style="color:#000000"><span style="background-color:#f39c12" id="sa3a43">من</span></span></th>
+                        <th scope="col"><span style="color:#000000"><span style="background-color:#f39c12">الساعة الروحانية</span></span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+				
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a1"></span></span></td>
+							<td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a31"></span></span></td>
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#ecf0f1">الساعة الأولى</span></span></td>
+                    </tr>
+                    <tr>
+					 
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a2"></span></span></td>
+						<td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a32"></span></span></td>
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#ecf0f1">الساعة الثانية</span></span></td>
+                    </tr>
+                    <tr>
+					
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a3"></span></span></td>
+						 <td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a33"></span></span></td>
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#ecf0f1">الساعة الثالثة</span></span></td>
+                    </tr>
+                    <tr>
+					    
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a4"></span></span></td>
+						  <td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a34"></span></span></td>
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#ecf0f1">الساعة الرابعة</span></span></td>
+                    </tr>
+                    <tr>
+					  
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a5"></span></span></td>
+						  <td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a35"></span></span></td>
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#ecf0f1">الساعة الخامسة</span></span></td>
+                    </tr>
+                    <tr>
+					
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a6"></span></span></td>
+						<td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a36"></span></span></td>
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#ecf0f1">الساعة السادسة</span></span></td>
+                    </tr>
+                    <tr>
+				
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a7"></span></span></td>
+							  <td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a37"></span></span></td>
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#ecf0f1">الساعة السابعة</span></span></td>
+                    </tr>
+                    <tr>
+					
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a8"></span></span></td>
+						 <td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a38"></span></span></td>
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#ecf0f1">الساعة الثامنة</span></span></td>
+                    </tr>
+                    <tr>
+					  
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a9"></span></span></td>
+						 <td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a39"></span></span></td>
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#ecf0f1">الساعة التاسعة</span></span></td>
+                    </tr>
+                    <tr>
+					
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a10"></span></span></td>
+						  <td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a40"></span></span></td>
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#ecf0f1">الساعة العاشرة</span></span></td>
+                    </tr>
+                    <tr>
+					
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a11"></span></span></td>
+						<td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a41"></span></span></td>
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#ecf0f1">الساعة الحادية عشر</span></span></td>
+                    </tr>
+                    <tr>
+					   
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a12"></span></span></td>
+						<td style="text-align:center"><span style="color:#000000"><span style="background-color:#e67e22" id="sa3a42"></span></span></td>
+                        <td style="text-align:center"><span style="color:#000000"><span style="background-color:#ecf0f1">الساعة الثانية عشر</span></span></td>
+                    </tr>
+                </tbody>
+                
+            </table>
+            
+            <!-- <p style="text-align:center">&nbsp;</p>
+            
+            <p style="text-align:center">&nbsp;</p>
+            
+            <p style="text-align:center">&nbsp;</p>
+            
+            <p style="text-align:center">&nbsp;</p>
+            
+            <p style="text-align:center">&nbsp;</p> -->
+            
+            
+        </div>
+        <h2 class="ouihda" scope="col"><span style="color:#000000"><span style="background-color:#f39c12">طول الوحدة  :  <span id="sa3a14"></span></span></span></h2>
+
+     <div class="minoa">
+        <p style="text-align:center"><span style="color:hsl(0, 0%, 0%)">السلام عليكم&nbsp; :&nbsp;هاته الساعة عملتها من أجل&nbsp; التحصين&nbsp;</span></p>
+
+        <p style="text-align:center"><span style="color:#000000">لكل إنسان وقت معين تكون طاقته ضعيفة فيه فيستغلون&nbsp;المشعوذون والمنجمون هذا الوقت لسحر الناس وتدميرهم&nbsp;</span></p>
+        
+        <p style="text-align:center"><span style="color:#000000">لن تخسر شيئا هناك وقت تحصن فيه كثيرا بذكر الله ولذكر الله أكبر</span></p>
+        
+        <p style="text-align:center"><span style="color:#000000">&nbsp;. بسم الله الرحمن الرحيم : ولا يفلح الساحر حيث أتى</span></p>
+        
+        <p style="text-align:center"><span style="color:#000000">والله المستعان&nbsp; على مايصفون</span></p>
+       
+        
+        <p style="text-align:center">&nbsp;</p>
+        
+        
+
+     </div>
+    
+    
+
+
+ 
+    </main>
+ 
+ 
+
+   
+</div>
+
+
+
+<script>
+    function getPrayerTimes(latitude, longitude) {
+      // ADHAN PRAYER TIMES API endpoint
+      const url = `https://api.aladhan.com/v1/timings?latitude=${latitude}&longitude=${longitude}&method=4`;
+
+      fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+          
+      const timings = data.data.timings;
+      
+      const prayerTimes = data.data.timings;
+      const readable = data.data.date.readable ;
+      const forday  = data.data.date.hijri.weekday.ar;
+      
+      const hijriday = data.data.date.hijri.day;
+      const hijrmonth = data.data.date.hijri.month.ar;
+      const hijryear = data.data.date.hijri.year;
+      const hijriDate = forday +' '+ hijriday +' '+ hijrmonth +' '+ hijryear;
+
+      
+      
+      const gregorianDate = data.data.date.gregorian.date;
+      const timezone = data.data.meta.timezone;
+    
+      const sunrise = timings.Sunrise;
+      const sunset = timings.Sunset;
+      const fajr = timings.Fajr;
+      const dhuhr = timings.Dhuhr;
+      const asr = timings.Asr;
+      const maghrib = timings.Maghrib;
+      const isha = timings.Isha;
+      const Imsak = timings.Imsak;
+      const Midnight = timings.Midnight;
+
+          // Display prayer times on the web page
+          document.getElementById("fajr").innerHTML = fajr;
+          document.getElementById("dhuhr").innerHTML = dhuhr;
+          document.getElementById("asr").innerHTML = asr;
+          document.getElementById("maghrib").innerHTML = maghrib;
+          document.getElementById("isha").innerHTML = isha;
+          document.getElementById("hijriDate").innerHTML = hijriDate;
+          document.getElementById("gregorianDate").innerHTML = gregorianDate;
+          document.getElementById("Imsak").innerHTML = Imsak;
+          document.getElementById("Midnight").innerHTML = Midnight;
+          document.getElementById("timezone").innerHTML = timezone;
+          document.getElementById("sunrise").innerHTML = sunrise;
+          document.getElementById("sunset").innerHTML = sunset;
+          console.log(data);
+
+
+
+   
+
+
+
+
+//
+            //جميع معاملات الحساب الخاصة ر
+
+            // Define the time
+            const time = sunset;
+            const time1 = sunrise ;
+            // const elena = 1440; //24 *60
+
+            // Split the time into hours and minutes
+            const [hours, minutes] = time.split(":");
+            const [hours1, minutes1] = time1.split(":");
+
+
+   
+
+
+
+
+
+
+
+
+
+            // Convert the hours and minutes to minutes
+            const totalMinutes1 = parseInt(hours1) * 60 + parseInt(minutes1);
+            const totalMinutes = parseInt(hours) * 60 + parseInt(minutes);
+            const mins = (totalMinutes - totalMinutes1);
+            const unites = mins / 12;
+            const horse1 = totalMinutes1 + unites;
+            const horse2 = horse1 + unites;
+            const horse3 = horse2 + unites;
+            const horse4 = horse3 + unites;
+            const horse5 = horse4 + unites;
+            const horse6 = horse5 + unites;
+            const horse7 = horse6 + unites;
+            const horse8 = horse7 + unites;
+            const horse9 = horse8 + unites;
+            const horse10 = horse9 + unites;
+            const horse11 = horse10 + unites;
+            const horse12 = horse11 + unites;
+
+            //التحويل من الدقائق إلى الساعات
+
+            // best code convert minute to time
+
+            const convert = (n) => {
+  const hours = Math.floor(n / 60);
+  const minutes = (n % 60).toFixed(14);
+  const max_hours = 24;
+  let formatted_hours = hours % max_hours;
+  if (formatted_hours === 0) {
+    formatted_hours = max_hours;
+  }
+  return `${formatted_hours}:${minutes}`;
+};
+
+
+
+            document.getElementById("sa3a1").innerHTML =  convert(horse1) ;
+            document.getElementById("sa3a2").innerHTML = convert(horse2);
+            document.getElementById("sa3a3").innerHTML = convert(horse3);
+            document.getElementById("sa3a4").innerHTML = convert(horse4);
+            document.getElementById("sa3a5").innerHTML = convert(horse5);
+            document.getElementById("sa3a6").innerHTML = convert(horse6);
+            document.getElementById("sa3a7").innerHTML = convert(horse7);
+            document.getElementById("sa3a8").innerHTML = convert(horse8);
+            document.getElementById("sa3a9").innerHTML = convert(horse9);
+            document.getElementById("sa3a10").innerHTML = convert(horse10);
+            document.getElementById("sa3a11").innerHTML = convert(horse11);
+            document.getElementById("sa3a12").innerHTML = convert(horse12);
+            // document.getElementById("sa3a13").innerHTML = sunrise;
+            document.getElementById("sa3a14").innerHTML = unites;
+
+
+            
+            document.getElementById("sa3a31").innerHTML =  sunrise ;
+            document.getElementById("sa3a32").innerHTML = convert(horse1);
+            document.getElementById("sa3a33").innerHTML = convert(horse2);
+            document.getElementById("sa3a34").innerHTML = convert(horse3);
+            document.getElementById("sa3a35").innerHTML = convert(horse4);
+            document.getElementById("sa3a36").innerHTML = convert(horse5);
+            document.getElementById("sa3a37").innerHTML = convert(horse6);
+            document.getElementById("sa3a38").innerHTML = convert(horse7);
+            document.getElementById("sa3a39").innerHTML = convert(horse8);
+            document.getElementById("sa3a40").innerHTML = convert(horse9);
+            document.getElementById("sa3a41").innerHTML = convert(horse10);
+            document.getElementById("sa3a42").innerHTML = convert(horse11);
+
+
+        });
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+    // Get user's current location using Geolocation API
+    navigator.geolocation.watchPosition(
+      (position) => {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+
+        // Display latitude and longitude on the web page
+        document.getElementById("latitude").innerHTML = latitude;
+        document.getElementById("longitude").innerHTML = longitude;
+
+        // Call getPrayerTimes function to get prayer times for the user's location
+        getPrayerTimes(latitude, longitude);
+      },
+      (error) => {
+        console.error(error);
+      }
+    );
+  </script>
+    <script src="app.js"></script>
+    
+
+</body>
+</html>
